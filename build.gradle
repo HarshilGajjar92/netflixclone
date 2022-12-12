@@ -1,6 +1,8 @@
 plugins {
     id 'java'
     id 'application'
+    id 'org.springframework.boot' version '2.7.6'
+    id 'io.spring.dependency-management' version '1.1.0'
 }
 
 ext{
@@ -13,3 +15,15 @@ application{
 group 'com.HarshilGajjar92'
 version '1.0-SNAPSHOT'
 
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+}
+
+test{
+    useJUnitPlatform()
+}
