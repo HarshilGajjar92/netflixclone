@@ -1,7 +1,15 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
+ext{
+    javaMainClass = "com.HarshilGajjar92.Application"
+}
+
+application{
+    mainClassName = javaMainClass
+}
 group 'com.HarshilGajjar92'
 version '1.0-SNAPSHOT'
 
