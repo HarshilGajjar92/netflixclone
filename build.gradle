@@ -2,6 +2,6 @@ plugins {
     id 'java'
 }
 
-group 'com.harshilgajjar'
+group 'com.HarshilGajjar92'
 version '1.0-SNAPSHOT'
 
